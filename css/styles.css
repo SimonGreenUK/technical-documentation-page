@@ -74,5 +74,21 @@ nav li a {
 	text-decoration: none;
 }
 
+/* --- MEDIA QUERIES --- */
+
+@media all and (max-width: 850px) {
+
+	#flex-wrapper {
+		display: inline;
+		min-height: 100vh;
+	}
+
+	nav {
+		min-height: 50vh;
+		width: 100vw;
+	}
+
+}
+
 
 
