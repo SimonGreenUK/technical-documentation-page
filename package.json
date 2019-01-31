@@ -1,0 +1,24 @@
+{
+  "name": "technical-documentation-page",
+  "version": "1.0.0",
+  "description": "freeCodeCamp Responsive Web Design Project - Technical Documentation Page",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonGreenUK/technical-documentation-page.git"
+  },
+  "author": ,
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonGreenUK/technical-documentation-page/issues"
+  },
+  "homepage": "https://github.com/SimonGreenUK/technical-documentation-page#readme"
+}
