@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>CSS Animations</title>
 	<link rel="stylesheet" type="text/css" href="build/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/prism.css"/>
 </head>
 <body>
 
@@ -53,8 +54,6 @@
 					<li>animation-play-state | Lets you pause and resume the animation sequence.</li>
 				</ul>	
 			</p>
-
-			<code></code>
 			
 		</section>
 
@@ -66,10 +65,6 @@
 
 			<p>You can optionally include additional keyframes that describe intermediate steps between the start and end of the animation.</p>
 			
-			<code></code>
-			<ul>
-				<li></li>	
-			</ul>
 		</section>
 
 		<section id="examples" class="main-section">
@@ -78,13 +73,13 @@
 			<p>Note: to see the following examples in action create an HTML file containting a paragraph element and the link to a css file and try using the example css snippets below. Finally open the HTML file in your browser and enjoy.</p>
 
 			<p><em>Making text slide across the browser window</em></p>
-			<p>This simple example styles the <code>&lt;p&gt;</code> element so that the text slides in from off the right edge of the browser window.</p>
+			<p>This simple example styles the <code class="language-css">&lt;p&gt;</code> element so that the text slides in from off the right edge of the browser window.</p>
 
 			<p>Note that animations like this can cause the page to become wider than the browser window. To avoid this problem put the element to be animated in a container, and set <code>overflow:hidden</code> on the container.</p>
 
 <!-- START OF CODE EXAMPLE #1 -->
 			<pre>
-				<code>
+				<code class="language-css">
 
 p {
 	animation-duration: 3s;
@@ -112,7 +107,7 @@ p {
 
 <!-- START OF CODE EXAMPLE #2 -->
 			<pre>
-				<code>
+				<code class="language-css">
 75% {
   font-size: 300%;
   margin-left: 25%;
@@ -125,11 +120,11 @@ p {
 			<p>This tells the browser that 75% of the way through the animation sequence, the header should have its left margin at 25% and the width should be 150%.</p>
 
 			<p><em>Making it repeat</em></p>
-			<p>To make the animation repeat itself, simply use the <code>animation-iteration-count</code> property to indicate how many times to repeat the animation. In this case, let’s use infinite to have the animation repeat indefinitely:</p>
+			<p>To make the animation repeat itself, simply use the <code class="language-css">animation-iteration-count</code> property to indicate how many times to repeat the animation. In this case, let’s use infinite to have the animation repeat indefinitely:</p>
 
 <!-- START OF CODE EXAMPLE #3 -->
 			<pre>
-				<code>
+				<code class="language-css">
 p {
   animation-duration: 3s;
   animation-name: slidein;
@@ -140,11 +135,11 @@ p {
 <!-- END OF CODE EXAMPLE #3 -->
 
 			<p><em>Making it move back and forth</em></p>
-			<p>That made it repeat, but it’s very odd having it jump back to the start each time it begins animating. What we really want is for it to move back and forth across the screen. That’s easily accomplished by setting <code>animation-direction</code> to <code>alternate:</code></p>
+			<p>That made it repeat, but it’s very odd having it jump back to the start each time it begins animating. What we really want is for it to move back and forth across the screen. That’s easily accomplished by setting <code class="language-css">animation-direction</code> to <code class="language-css">alternate:</code></p>
 
 <!-- START OF CODE EXAMPLE #4 -->
 			<pre>
-				<code>
+				<code class="language-css">
 p {
   animation-duration: 3s;
   animation-name: slidein;
@@ -156,11 +151,11 @@ p {
 <!-- END OF CODE EXAMPLE #4 -->
 
 			<p><em>Using animation shorthand</em></p>
-			<p>The <code>animation</code> shorthand is useful for saving space. As an example, the rule we’ve been using through this article:
+			<p>The <code class="language-css">animation</code> shorthand is useful for saving space. As an example, the rule we’ve been using through this article:
 
 <!-- START OF CODE EXAMPLE #5 -->
 			<pre>
-				<code>
+				<code class="language-css">
 p {
   animation-duration: 3s;
   animation-name: slidein;
@@ -173,7 +168,7 @@ p {
 			<p>Could be replaced by</p>
 
 			<pre>
-				<code>
+				<code class="language-css">
 p {
   animation: 3s infinite alternate slidein;
 }	
@@ -194,14 +189,14 @@ p {
 				</ul>
 			</p>
 			
-			
 		</section>	
-	
+
 	</main>
 
 	<footer></footer>
 
 </div>
 
+<script src="prism.js"></script>
 </body>
 </html>

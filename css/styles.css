@@ -30,7 +30,6 @@ header {
   overflow: scroll;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 /* --- NAVIGATION --- */
