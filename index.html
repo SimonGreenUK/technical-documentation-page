@@ -5,7 +5,7 @@
 	<title>CSS Animations</title>
 	<link rel="stylesheet" type="text/css" href="build/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/prism.css"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto+Slab" >
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400|Roboto+Slab:300,400" >
 </head>
 <body>
 
@@ -24,8 +24,9 @@
 	</nav>
 
 	<main id="main-doc">
+		
 		<section id="introduction" class="main-section">
-			<header>Introduction</header>
+			<header class="section-header">Introduction</header>
 			<p>CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation’s style, as well as possible intermediate waypoints.</p>
 			
 			<p>There are three key advantages to CSS animations over traditional script-driven animation techniques:
@@ -35,9 +36,7 @@
 					<li>Letting the browser control the animation sequence lets the browser optimize performance and efficiency by, for example, reducing the update frequency of animations running in tabs that aren't currently visible.</li>
 				</ul>
 			</p>
-			
-			<code></code>
-			
+			<hr>	
 		</section>	
 		
 		<section id="configuration" class="main-section">
@@ -55,7 +54,7 @@
 					<li>animation-play-state | Lets you pause and resume the animation sequence.</li>
 				</ul>	
 			</p>
-			
+			<hr>
 		</section>
 
 		<section id="using_keyframes" class="main-section">
@@ -65,7 +64,7 @@
 			<p>Since the timing of the animation is defined in the CSS style that configures the animation, keyframes use a <percentage> to indicate the time during the animation sequence at which they take place. 0% indicates the first moment of the animation sequence, while 100% indicates the final state of the animation. Because these two times are so important, they have special aliases: from and to. Both are optional. If from/0% or to/100% is not specified, the browser starts or finishes the animation using the computed values of all attributes.</p>
 
 			<p>You can optionally include additional keyframes that describe intermediate steps between the start and end of the animation.</p>
-			
+			<hr>
 		</section>
 
 		<section id="examples" class="main-section">
@@ -81,7 +80,6 @@
 <!-- START OF CODE EXAMPLE #1 -->
 			<pre>
 				<code class="language-css">
-
 p {
 	animation-duration: 3s;
 	animation-name: slidein;
@@ -176,7 +174,7 @@ p {
 				</code>
 			</pre>
 <!-- END OF CODE EXAMPLE #5 -->
-	
+			<hr>
 		</section>
 
 		<section id="resources" class="main-section">
@@ -189,9 +187,8 @@ p {
 					<li><a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">W3 Schools</a></li>	
 				</ul>
 			</p>
-			
 		</section>	
-
+		
 	</main>
 
 	<footer></footer>
