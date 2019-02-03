@@ -34,6 +34,10 @@ p {
 	line-height: 1.3rem;
 }
 
+dt {
+	padding-bottom: 5px;
+}
+
 dd {
 	padding-bottom: 10px;
 }
@@ -46,6 +50,18 @@ dd {
 hr {
 	color: #292929;
 	margin: 2rem 0rem 2rem 0rem;
+}
+
+h3 {
+	font-family: "Roboto Slab";
+	/*font-size: 1.2rem;*/
+	font-weight: 300;
+	color: white;
+}
+
+#highlight {
+	background-color: black;
+	padding: 0px 10px 0px 10px;  
 }
 
 /* --- MAIN PAGE LAYOUT --- */
