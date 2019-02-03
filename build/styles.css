@@ -30,20 +30,19 @@ header {
 	color: #292929;
 }
 
+h3 {
+	font-family: "Roboto Slab";
+	font-weight: 300;
+	color: white;
+}
+
+#highlight {
+	background-color: black;
+	padding: 0px 10px 0px 10px;  
+}
+
 p {
 	line-height: 1.3rem;
-}
-
-dt {
-	padding-bottom: 5px;
-}
-
-dd {
-	padding-bottom: 25px;
-}
-
-pre {
-	max-width: 90vw;
 }
 
 #main-doc ol {
@@ -56,20 +55,22 @@ pre {
 	max-width: 50rem;
 }
 
+dt {
+	padding-bottom: 5px;
+}
+
+dd {
+	padding-bottom: 25px;
+}
+
+pre {
+	max-width: 90vw;
+	border-left: 5px solid #3d7e9a;
+}
+
 hr {
 	color: #292929;
 	margin: 2rem 0rem 2rem 0rem;
-}
-
-h3 {
-	font-family: "Roboto Slab";
-	font-weight: 300;
-	color: white;
-}
-
-#highlight {
-	background-color: black;
-	padding: 0px 10px 0px 10px;  
 }
 
 /* --- MAIN PAGE LAYOUT --- */
@@ -85,16 +86,23 @@ h3 {
 
 /*Flex Item*/
 #main-doc {
-	-webkit-box-flex: 3;
-	-ms-flex: 3;
-	flex: 3;
-  padding: 1rem 8rem 1rem 2rem;
+	-webkit-box-flex: 4;
+	-ms-flex: 4;
+	flex: 4;
+  /*padding: 1rem 8rem 1rem 2rem;*/
   overflow: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  background-color: #edfffd;
+}
+
+#main-doc-inner {
+	margin: 0rem 8rem 0rem 2rem;
+	padding: 1rem 9rem 1rem 5rem;
+	background-color: white;
+	-webkit-box-flex: 1fr;
+	-ms-flex: 1fr;
+	flex: 1fr;
 }
 
 /* --- NAVIGATION --- */
@@ -104,7 +112,7 @@ nav {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
-	border-right: 0.5px solid black;
+	/*border-right: 0.5px solid black;*/
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -120,7 +128,6 @@ nav {
 	min-height: 100vh;
   width: 20vw;
   background-color: #edfffd;
-  /*position: fixed;*/
 }
 
 /* Flex Item */
@@ -134,10 +141,15 @@ nav ul {
 	flex: 1;
 }
 
+nav li {
+	background-color: white;
+	/*border-right: 0.5px solid black;*/
+}
+
 #nav-header {
 	font-weight: 400;
 	padding: 1rem 1rem 1rem 1rem;
-	border-bottom: 1px solid #292929;
+	/*border-bottom: 1px solid #292929;*/
 }
 
 .nav-link {
@@ -146,15 +158,22 @@ nav ul {
   text-decoration: none;
   color: #292929;
   font-weight: 300;
-  border-bottom: 1px solid #292929;
+  /*border-bottom: 1px solid #292929;*/
 }
 
 .nav-link:hover {
 	background-color: #cbfdf7;
-	border-right: 1px solid #292929;
+	/*border-right: 1px solid #292929;*/
 }
 
 /* --- MEDIA QUERIES --- */
+
+@media all and (max-width: 1100px) {
+	#main-doc-inner {
+		margin: 0rem 2rem 0rem 2rem;
+		padding: 1rem 4.5rem 1rem 2.5rem;
+	}
+}
 
 @media all and (max-width: 765px) {
 
@@ -164,15 +183,24 @@ nav ul {
 	}
 
 	#main-doc {
-		padding: 1rem 2rem 1rem 1rem;
+		/*padding: 1rem 2rem 1rem 1rem;*/
 	}
+
+	#main-doc-inner {
+	margin: 1rem 2rem 0rem 2rem;
+	padding: 1rem 2rem 1rem 2rem;
+}
 
 	nav {
 		min-height: 50vh;
 		width: 100vw;
 	}
-
 }
 
+@media all and (max-width: 600px) {
 
-
+	#main-doc-inner {
+		margin: 1rem 1rem 0rem 1rem;
+		padding: 1rem;
+	}
+}
