@@ -28,7 +28,7 @@
 		<div id="main-doc-inner">
 		
 		<section id="introduction" class="main-section">
-			<header class="section-header">Introduction</header>
+			<header class="section-header"><h2>Introduction</h2></header>
 			<p>CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation’s style, as well as possible intermediate waypoints.</p>
 			
 			<p>There are three key advantages to CSS animations over traditional script-driven animation techniques:
@@ -42,7 +42,7 @@
 		</section>	
 		
 		<section id="configuration" class="main-section">
-			<header>Configuration</header>
+			<header><h2>Configuration</h2></header>
 			<p>To create a CSS animation sequence, you style the element you want to animate with the <code class="language-css">animation</code> property or its sub-properties. This lets you configure the timing, duration, and other details of how the animation sequence should progress. This does not configure the actual appearance of the animation, which is done using the <code class="language-css">@keyframes</code> at-rule as described in Using Keyframes below.</p>
 			<p>The sub-properties of the <code class="language-css">animation</code> property are:</p>
 				<dl>
@@ -68,7 +68,7 @@
 		</section>
 
 		<section id="using_keyframes" class="main-section">
-			<header>Using Keyframes</header>
+			<header><h2>Using Keyframes</h2></header>
 			<p>Once you’ve configured the animation’s timing, you need to define the appearance of the animation. This is done by establishing two or more keyframes using the <code class="language-css">@keyframes</code> at-rule. Each keyframe describes how the animated element should render at a given time during the animation sequence.
 
 			<p>Since the timing of the animation is defined in the CSS style that configures the animation, keyframes use a <code class="language-css">&lt;percentage&gt;</code> to indicate the time during the animation sequence at which they take place. 0% indicates the first moment of the animation sequence, while 100% indicates the final state of the animation. Because these two times are so important, they have special aliases: <code class="language-css">from</code> and <code class="language-css">to</code>. Both are optional. If <code class="language-css">from</code>/<code class="language-css">0%</code> or <code class="language-css">to</code>/<code class="language-css">100%</code> is not specified, the browser starts or finishes the animation using the computed values of all attributes.</p>
@@ -78,7 +78,7 @@
 		</section>
 
 		<section id="examples" class="main-section">
-			<header>Examples</header>
+			<header><h2>Examples</h2></header>
 
 			<p>Note: to see the following examples in action create an HTML file containting a paragraph element and the link to a css file and try using the example css snippets below. Finally open the HTML file in your browser and enjoy.</p>
 
@@ -188,7 +188,7 @@ p {
 		</section>
 
 		<section id="resources" class="main-section">
-			<header>Resources</header>
+			<header><h2>Resources</h2></header>
 
 			<p>To learn more about CSS animations check out the following:
 				<ul>
