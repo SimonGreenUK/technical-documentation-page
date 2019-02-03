@@ -91,7 +91,7 @@ hr {
 }
 
 #main-doc-inner {
-	margin: 0rem 8rem 0rem 2rem;
+	margin: 1rem 8rem 0rem 2rem;
 	padding: 1rem 9rem 1rem 5rem;
 	background-color: white;
 	flex: 1fr;
@@ -116,13 +116,13 @@ nav {
 nav ul {
 	list-style: none;
 	font-family: 'Roboto Slab', serif;
-	margin: 0;
+	margin: 1rem 0 0 1rem;
 	padding: 0;
 	flex: 1;
 }
 
 nav li {
-	background-color: white;
+	background-color: white; 
 	/*border-right: 0.5px solid black;*/
 }
 
@@ -153,6 +153,11 @@ nav li {
 		margin: 0rem 2rem 0rem 2rem;
 		padding: 1rem 4.5rem 1rem 2.5rem;
 	}
+
+	nav ul {
+		margin: 0;
+	}
+
 }
 
 @media all and (max-width: 765px) {
@@ -162,12 +167,12 @@ nav li {
 		min-height: 100vh;
 	}
 
-	#main-doc {
-		/*padding: 1rem 2rem 1rem 1rem;*/
+	nav ul {
+		margin: 0 2rem 0 2rem;	
 	}
 
 	#main-doc-inner {
-	margin: 1rem 2rem 0rem 2rem;
+	margin: 0rem 2rem 0rem 2rem;
 	padding: 1rem 2rem 1rem 2rem;
 }
 
@@ -179,8 +184,12 @@ nav li {
 
 @media all and (max-width: 600px) {
 
+	nav ul {
+		margin: 0 1rem 0 1rem;	
+	}
+
 	#main-doc-inner {
-		margin: 1rem 1rem 0rem 1rem;
+		margin: 0rem 1rem 0rem 1rem;
 		padding: 1rem;
 	}
 }
