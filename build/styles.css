@@ -97,44 +97,24 @@ hr {
 	margin: 1rem 12rem 1rem 2rem;
 	padding: 1rem 5.5rem 1rem 5rem;
 	background-color: white;
-	-webkit-box-flex: 1fr;
-	-ms-flex: 1fr;
-	flex: 1fr;
 }
 
 /* --- NAVIGATION --- */
 
-/* Flex Container */
+/*Flex Item*/
 nav {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	min-height: 100vh;
   width: 20vw;
   background-color: #46ADA4;
 }
 
-/* Flex Item */
 nav ul {
 	list-style: none;
 	font-family: 'Roboto Slab', serif;
 	margin: 1rem 0 0 1rem;
 	padding: 0;
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
 }
 
 nav li {
@@ -142,7 +122,6 @@ nav li {
 }
 
 #nav-header {
-	font-weight: 400;
 	font-size: 1.5rem;
 	padding: 1rem 1rem 1rem 1rem;
 }
@@ -151,8 +130,6 @@ nav li {
 	display: block;
   padding: 1rem 1rem 1rem 1rem;
   text-decoration: none;
-  color: #292929;
-  font-weight: 300;
 }
 
 .nav-link:hover {
