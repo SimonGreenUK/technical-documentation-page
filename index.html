@@ -5,7 +5,7 @@
 	<title>CSS Animations</title>
 	<link rel="stylesheet" type="text/css" href="build/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/prism.css"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400|Roboto+Slab:300,400" >
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400%7CRoboto+Slab:300,400">
 </head>
 <body>
 
@@ -31,13 +31,12 @@
 			<header class="section-header"><h2>Introduction</h2></header>
 			<p>CSS animations make it possible to animate transitions from one CSS style configuration to another. Animations consist of two components, a style describing the CSS animation and a set of keyframes that indicate the start and end states of the animation’s style, as well as possible intermediate waypoints.</p>
 			
-			<p>There are three key advantages to CSS animations over traditional script-driven animation techniques:
+			<p>There are three key advantages to CSS animations over traditional script-driven animation techniques:</p>
 				<ol>	
 					<li>They’re easy to use for simple animations; you can create them without even having to know JavaScript.</li>
 					<li>The animations run well, even under moderate system load. Simple animations can often perform poorly in JavaScript (unless they’re well made). The rendering engine can use frame-skipping and other techniques to keep the performance as smooth as possible.</li>
 					<li>Letting the browser control the animation sequence lets the browser optimize performance and efficiency by, for example, reducing the update frequency of animations running in tabs that aren't currently visible.</li>
 				</ol>
-			</p>
 			<hr>	
 		</section>	
 		
@@ -82,7 +81,7 @@
 
 			<p>Note: to see the following examples in action create an HTML file containting a paragraph element and the link to a css file and try using the example css snippets below. Finally open the HTML file in your browser and enjoy.</p>
 
-			<h3><span id="highlight">Making text slide across the browser window</span></h3>
+			<h3>Making text slide across the browser window</h3>
 			<p>This simple example styles the <code class="language-css">&lt;p&gt;</code> element so that the text slides in from off the right edge of the browser window.</p>
 
 			<p>Note that animations like this can cause the page to become wider than the browser window. To avoid this problem put the element to be animated in a container, and set <code class="language-css">overflow:hidden</code> on the container.</p>
@@ -111,7 +110,7 @@ p {
 
 <!-- END OF CODE EXAMPLE #1			 -->
 
-			<h3><span id="highlight">Adding another keyframe</span></h3>
+			<h3>Adding another keyframe</h3>
 			<p>Let’s add another keyframe to the previous example’s animation. Let’s say we want the header’s font size to increase as it moves from right to left for a while, then to decrease back to its original size. That’s as simple as adding this keyframe:</p>
 
 <!-- START OF CODE EXAMPLE #2 -->
@@ -128,7 +127,7 @@ p {
 			
 			<p>This tells the browser that 75% of the way through the animation sequence, the header should have its left margin at 25% and the width should be 150%.</p>
 
-			<h3><span id="highlight">Making it repeat</span></h3>
+			<h3>Making it repeat</h3>
 			<p>To make the animation repeat itself, simply use the <code class="language-css">animation-iteration-count</code> property to indicate how many times to repeat the animation. In this case, let’s use <code class="language-css">infinite</code> to have the animation repeat indefinitely:</p>
 
 <!-- START OF CODE EXAMPLE #3 -->
@@ -143,7 +142,7 @@ p {
 			</pre>
 <!-- END OF CODE EXAMPLE #3 -->
 
-			<h3><span id="highlight">Making it move back and forth</span></h3>
+			<h3>Making it move back and forth</h3>
 			<p>That made it repeat, but it’s very odd having it jump back to the start each time it begins animating. What we really want is for it to move back and forth across the screen. That’s easily accomplished by setting <code class="language-css">animation-direction</code> to <code class="language-css">alternate:</code></p>
 
 <!-- START OF CODE EXAMPLE #4 -->
@@ -159,7 +158,7 @@ p {
 			</pre>
 <!-- END OF CODE EXAMPLE #4 -->
 
-			<h3><span id="highlight">Using animation shorthand</span></h3>
+			<h3>Using animation shorthand</h3>
 			<p>The <code class="language-css">animation</code> shorthand is useful for saving space. As an example, the rule we’ve been using through this article:
 
 <!-- START OF CODE EXAMPLE #5 -->
@@ -190,13 +189,13 @@ p {
 		<section id="resources" class="main-section">
 			<header><h2>Resources</h2></header>
 
-			<p>To learn more about CSS animations check out the following:
+			<p>To learn more about CSS animations check out the following:</p>
 				<ul>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank">MDN</a></li>	
+					<li>All the documentation shown in this page is from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank">MDN</a></li>	
 					<li><a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank">CSS-Tricks</a></li>	
 					<li><a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">W3 Schools</a></li>	
 				</ul>
-			</p>
+			
 		</section>	
 		
 		</div>
